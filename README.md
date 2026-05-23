@@ -149,15 +149,7 @@ This confirmed that the agent was using the uploaded runbook and following the s
 ![Production Safety Guardrail Response](06-production-safety-response.png)
 ```
 
-Then reference them here:
 
-```markdown
-![Foundry Project Created](screenshots/01-foundry-project-created.png)
-![Agent Created](screenshots/02-agent-created-gpt41-mini.png)
-![Agent Instructions](screenshots/03-agent-instructions.png)
-![Runbook Uploaded](screenshots/04-runbook-uploaded.png)
-![CrashLoopBackOff Response](screenshots/05-crashloopback-response.png)
-![Production Safety Response](screenshots/06-production-safety-response.png)
 ```
 
 ---
