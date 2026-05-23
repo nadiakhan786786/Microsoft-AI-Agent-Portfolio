@@ -223,3 +223,33 @@ Planned enhancements include:
 
 **Status:** Completed initial build and test
 **Next Step:** Add more runbooks and expand into a multi-agent cloud operations workflow
+
+
+
+
+## Azure Agentic Workflow Environment
+
+I created an Azure Blob Storage-based lab environment to simulate real incident processing.
+
+### Storage Design
+
+- `input` container: stores incoming incident JSON files
+- `runbooks` container: stores troubleshooting runbooks for RAG-style grounding
+- `output` container: stores generated triage reports
+
+### Workflow
+
+1. Incident JSON uploaded to Azure Blob Storage input container
+2. Microsoft Foundry Incident-Orchestrator-Agent processes the incident details
+3. Agent generates a structured triage report
+4. Triage report is saved as JSON into the Azure Blob Storage output container
+
+### Example Files
+
+- `input/incident-001.json`
+- `runbooks/aks-troubleshooting-runbook.txt`
+- `output/triage-report-INC-001.json`
+
+### Result
+
+This demonstrates an end-to-end Azure-based agentic workflow where incident data is stored in Azure, processed by a Microsoft Foundry agent, and returned as a structured triage report.
