@@ -146,7 +146,7 @@ This confirmed that the agent was using the uploaded runbook and following the s
 
 ### Production Safety Guardrail Response
 
-![Production Safety Guardrail Response](06-production-safety-response.png)
+![Production Safety Guardrail Response](06-production-safety-response.png.png)
 ```
 
 
