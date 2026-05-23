@@ -137,18 +137,12 @@ This confirmed that the agent was using the uploaded runbook and following the s
 
 ---
 
-## Screenshots to Include
-
-Add screenshots to the repository in a folder named `screenshots`.
 
 Recommended screenshot names:
 
 ```text
-01-foundry-project-created.png
+
 02-agent-created-gpt41-mini.png
-03-agent-instructions.png
-04-runbook-uploaded.png
-05-crashloopback-response.png
 06-production-safety-response.png
 ```
 
@@ -213,13 +207,7 @@ Through this project, I learned how to:
 
 ---
 
-## Resume Bullet Examples
 
-* Built a Cloud Operations AI Assistant in Microsoft Foundry using GPT-4.1-mini, custom instructions, and uploaded AKS troubleshooting runbooks to provide grounded Kubernetes incident response guidance.
-
-* Developed and tested a Microsoft Foundry AI agent for SRE and cloud operations use cases, integrating AKS troubleshooting documentation as grounding data and validating responses for CrashLoopBackOff and production safety scenarios.
-
-* Created an enterprise-style AI assistant prototype for cloud operations, combining prompt instructions, Azure-hosted LLM capabilities, and runbook-based grounding to standardize troubleshooting workflows.
 
 ---
 
