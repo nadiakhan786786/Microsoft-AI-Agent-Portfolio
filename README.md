@@ -138,12 +138,15 @@ This confirmed that the agent was using the uploaded runbook and following the s
 ---
 
 
-Recommended screenshot names:
+## Screenshots
 
-```text
+### Agent Created with GPT-4.1-mini
 
-02-agent-created-gpt41-mini.png
-06-production-safety-response.png
+![Agent Created with GPT-4.1-mini](02-agent-created-gpt41-mini.png)
+
+### Production Safety Guardrail Response
+
+![Production Safety Guardrail Response](06-production-safety-response.png)
 ```
 
 Then reference them here:
