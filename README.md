@@ -250,12 +250,7 @@ I created an Azure Blob Storage-based lab environment to simulate real incident 
 - `runbooks/aks-troubleshooting-runbook.txt`
 - `output/triage-report-INC-001.json`
 
-### Sample Lab Files
 
-- [Input Incident JSON](incident-001.json)
-- [AKS Troubleshooting Runbook](aks-troubleshooting-runbook.txt)
-- [Generated Triage Report](triage-report-INC-001.json)
-- 
 - ### Azure Output Proof
 
 ![Azure Output Triage Report](12-azure-output-triage-report.png)
