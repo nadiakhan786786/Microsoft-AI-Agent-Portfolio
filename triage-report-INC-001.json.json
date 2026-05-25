@@ -1,0 +1,41 @@
+{
+  "incident_id": "INC-001",
+  "severity": "High",
+  "incident_summary": "Payments API in Production is experiencing AKS pod CrashLoopBackOff, causing checkout failures for customers. Issue started shortly after a new deployment 30 minutes ago. Container exits immediately on startup. Incident is currently active.",
+  "missing_information": [
+    "Specific error messages or stack traces from the pod logs",
+    "Details of what changed in the new deployment",
+    "Pod resource usage metrics",
+    "Kubernetes event logs related to the pod",
+    "Whether the issue affects all pods or only some instances"
+  ],
+  "possible_root_causes": [
+    "Faulty code or configuration in the new deployment causing startup failure",
+    "Missing or misconfigured environment variables or secrets",
+    "Dependency service unavailability causing container exit",
+    "Container image corruption or tag mismatch",
+    "Resource limits preventing proper startup"
+  ],
+  "evidence_needed": [
+    "Full pod logs including startup and error messages",
+    "Kubernetes events and describe output for the pod",
+    "Details of recent deployment changes",
+    "Pod resource usage metrics",
+    "Status and logs of dependent services"
+  ],
+  "safe_validation_steps": [
+    "Retrieve detailed pod logs using 'kubectl logs <pod_name> --previous'",
+    "Describe the pod with 'kubectl describe pod <pod_name>' to check events and failure reasons",
+    "Check Kubernetes events in the namespace for related errors",
+    "Review deployment configuration and recent changes without applying changes",
+    "Validate availability of dependent services and secrets"
+  ],
+  "actions_to_avoid_first": [
+    "Restarting or scaling pods before identifying root cause",
+    "Rolling back or redeploying without root cause analysis",
+    "Modifying pod resource limits or configuration on live production pods",
+    "Deleting pods or Kubernetes objects"
+  ],
+  "recommended_next_action": "Run 'kubectl logs <pod_name> --previous' and 'kubectl describe pod <pod_name>' to gather logs and events, review deployment manifests, and engage application development team for analysis.",
+  "escalation_message": "Subject: URGENT: Production Payments API AKS Pod CrashLoopBackOff – Checkout Failures (INC-001)\n\nTeam,\n\nWe have an active incident affecting the Payments API in Production. As of 10:15 AM, AKS pods are in CrashLoopBackOff resulting in checkout failures for customers. This issue started shortly after a new deployment 30 minutes ago.\n\nCurrent logs indicate that the container exits immediately upon startup. We need immediate investigation into the pod logs, deployment changes, and any error messages for root cause analysis.\n\nPlease prioritize this incident and share findings from pod logs ('kubectl logs --previous'), pod description ('kubectl describe pod'), and deployment manifests.\n\nNo restarts or configuration changes should be done until more information is gathered.\n\nThank you,\n[Your Name/Team]"
+}

@@ -1,0 +1,11 @@
+{
+  "incident_id": "INC-001",
+  "application": "Payments API",
+  "environment": "Production",
+  "alert_time": "10:15 AM",
+  "issue": "AKS pod CrashLoopBackOff",
+  "impact": "Checkout failures for customers",
+  "recent_change": "New deployment 30 minutes ago",
+  "logs": "Container exits immediately after startup",
+  "current_status": "Active"
+}

@@ -1,0 +1,20 @@
+AKS Troubleshooting Runbook
+
+For CrashLoopBackOff:
+1. Check pod status.
+2. Describe the pod.
+3. Review current logs.
+4. Review previous crashed container logs.
+5. Check Kubernetes events.
+6. Review deployment history.
+7. Check config maps, secrets, image version, environment variables, and resource limits.
+8. Do not restart, delete, or roll back production pods until logs, events, monitoring data, and recent deployment changes are reviewed.
+
+Escalation format:
+Incident Summary:
+Severity:
+Impact:
+Evidence Needed:
+Safe Validation Steps:
+Recommended Next Action:
+Owner:
