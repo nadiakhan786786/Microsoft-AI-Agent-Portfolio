@@ -257,3 +257,10 @@ I created an Azure Blob Storage-based lab environment to simulate real incident 
 ### Result
 
 This demonstrates an end-to-end Azure-based agentic workflow where incident data is stored in Azure, processed by a Microsoft Foundry agent, and returned as a structured triage report.
+
+
+### Sample Lab Files
+
+- [Input Incident JSON](incident-001.json)
+- [AKS Troubleshooting Runbook](aks-troubleshooting-runbook.txt)
+- [Generated Triage Report](triage-report-INC-001.json)
