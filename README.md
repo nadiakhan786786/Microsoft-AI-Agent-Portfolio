@@ -248,9 +248,10 @@ I created an Azure Blob Storage-based lab environment to simulate real incident 
 
 - `input/incident-001.json`
 - `runbooks/aks-troubleshooting-runbook.txt`
-- `output/triage-report-INC-001.json`
+- `output/triage-report-INC-001.json.json`
 
 ### Azure Output Proof
+![Azure Output Triage Report](12-azure-output-triage-report.png)
 
 ### Result
 
@@ -261,4 +262,4 @@ This demonstrates an end-to-end Azure-based agentic workflow where incident data
 
 - [Input Incident JSON](incident-001.json)
 - [AKS Troubleshooting Runbook](aks-troubleshooting-runbook.txt)
-- [Generated Triage Report](triage-report-INC-001.json)
+- [Generated Triage Report](triage-report-INC-001.json.json)
