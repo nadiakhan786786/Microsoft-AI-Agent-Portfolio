@@ -24,7 +24,7 @@ Structured Triage Report
 Azure Blob Storage - output container
         ↓
 Phase 2 Automation Logic - process-incident.js
-```text
+
 ---
 
 ## Use Case
@@ -166,27 +166,6 @@ This confirmed that the agent was using the uploaded runbook and following the s
 ### Production Safety Guardrail Response
 
 ![Production Safety Guardrail Response](06-production-safety-response.png.png)
-```
-
-
-```
-
----
-
-## Architecture
-
-```text
-User Question
-     ↓
-Microsoft Foundry Agent Playground
-     ↓
-Cloud Operations AI Assistant
-     ↓
-GPT-4.1-mini Model
-     ↓
-Uploaded AKS Troubleshooting Runbook
-     ↓
-Grounded Troubleshooting Response
 ```
 
 ---
