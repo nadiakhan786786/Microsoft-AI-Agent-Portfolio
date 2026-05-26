@@ -76,8 +76,8 @@ The agent was tested with Kubernetes CrashLoopBackOff scenarios and production s
 **Agent Name:** Cloud-Operations-AI-Assistant
 **Platform:** Microsoft Foundry
 **Model:** GPT-4.1-mini
-**Resource Group:** rg-ai-agent-lab
-**Project:** cloud-ai-agent-lab
+**Resource Group:** rg-ai-agent-project
+**Project:** cloud-ai-agent-project
 **Knowledge File:** AKS-Troubleshooting-Runbook.txt
 
 ---
@@ -232,7 +232,7 @@ Planned enhancements include:
 * Add more runbooks for Azure, Terraform, CI/CD, Sysdig, Splunk, and incident response
 * Add monitoring and evaluation test cases
 * Add multiple specialized agents for incident triage, log analysis, and remediation recommendations
-* Integrate with real observability tools in a controlled lab environment
+* Integrate with real observability tools in a controlled enterprise-style environment
 * Add guardrails for production change safety
 * Create a multi-agent workflow for monitoring, incident analysis, and remediation planning
 
@@ -248,7 +248,7 @@ Planned enhancements include:
 
 ## Azure Agentic Workflow Environment
 
-I created an Azure Blob Storage-based lab environment to simulate real incident processing.
+I created an Azure Blob Storage-based workflow environment to simulate real incident processing.
 
 ### Storage Design
 
@@ -277,7 +277,7 @@ I created an Azure Blob Storage-based lab environment to simulate real incident 
 This demonstrates an end-to-end Azure-based agentic workflow where incident data is stored in Azure, processed by a Microsoft Foundry agent, and returned as a structured triage report.
 
 
-### Sample Lab Files
+### Sample workflow Files
 
 - [Input Incident JSON](incident-001.json)
 - [AKS Troubleshooting Runbook](aks-troubleshooting-runbook.txt)
