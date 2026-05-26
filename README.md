@@ -263,3 +263,25 @@ This demonstrates an end-to-end Azure-based agentic workflow where incident data
 - [Input Incident JSON](incident-001.json)
 - [AKS Troubleshooting Runbook](aks-troubleshooting-runbook.txt)
 - [Generated Triage Report](triage-report-INC-001.json.json)
+
+
+## Phase 2: Automation Logic
+
+I created a local automation script to simulate the serverless workflow logic for the incident triage process.
+
+The script reads an incident JSON file, applies runbook-style triage logic, generates a structured triage report, and writes the output as a new JSON file.
+
+### Automation Files
+
+- [Automation Script](process-incident.js)
+
+### Automation Flow
+
+1. Read `incident-001.json`
+2. Parse incident details
+3. Apply AKS/runbook-style triage logic
+4. Generate a structured triage report
+5. Save output as `triage-report-INC-001-automated.json`
+
+This demonstrates how the agentic incident workflow can be automated without manually copying and pasting incident details.
+
