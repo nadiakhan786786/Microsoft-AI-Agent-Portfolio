@@ -8,6 +8,25 @@ The project includes a custom AI agent, model configuration, agent instructions,
 
 ---
 
+## Architecture
+
+```text
+Incident Alert / JSON
+        ↓
+Azure Blob Storage - input container
+        ↓
+Microsoft Foundry Incident-Orchestrator-Agent
+        ↓
+AKS Troubleshooting Runbook / RAG Grounding
+        ↓
+Structured Triage Report
+        ↓
+Azure Blob Storage - output container
+        ↓
+Phase 2 Automation Logic - process-incident.js
+```text
+---
+
 ## Use Case
 
 Cloud and SRE teams often receive alerts related to Kubernetes workloads, application availability, pod failures, and production incidents. Troubleshooting these issues requires reviewing logs, pod events, recent deployments, resource limits, and configuration changes.
@@ -246,9 +265,9 @@ I created an Azure Blob Storage-based lab environment to simulate real incident 
 
 ### Example Files
 
-- `input/incident-001.json`
-- `runbooks/aks-troubleshooting-runbook.txt`
-- `output/triage-report-INC-001.json.json`
+- `incident-001.json`
+- `aks-troubleshooting-runbook.txt`
+- `triage-report-INC-001.json.json`
 
 ### Azure Output Proof
 ![Azure Output Triage Report](12-azure-output-triage-report.png)
