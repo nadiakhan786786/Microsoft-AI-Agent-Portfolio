@@ -1,5 +1,11 @@
 # Cloud Operations AI Assistant using Microsoft Foundry
 
+## Contact
+
+- LinkedIn: [Nadia Hameed](https://www.linkedin.com/in/nadia-hameed-13b21712/)
+- GitHub: [nadiakhan786786](https://github.com/nadiakhan786786)
+
+  
 ## Project Overview
 
 This project demonstrates how to build a cloud/SRE-focused AI agent using **Microsoft Foundry** and **Azure OpenAI**. The agent was designed to help troubleshoot Azure, Kubernetes, DevOps, monitoring, and incident response scenarios.
